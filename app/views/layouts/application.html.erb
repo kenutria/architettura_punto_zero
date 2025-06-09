@@ -18,9 +18,33 @@
     <%= javascript_importmap_tags %>
   </head>
 
+
+
   <body>
     <main class="">
-      <%= yield %>
+
+
+    <%= render partial: '/layouts/navbar',
+        locals: {
+            codice: "CODICE: EXTRA | -20% sull'outlet. -30% sopra i 60€",
+            uomo: "Uomo",
+            donna: "Donna",
+            bambini: "Bambini",
+            sport: "Sport",
+            heritage: "Heritage",
+            culture: "Culture",
+            sales: "Mid-Season Sales",
+        }
+    %>
+    <%= yield %>
+<%=
+  render partial: '/layouts/footer',
+    locals: {
+  }
+%>
+
+
+  
     </main>
   </body>
 </html>

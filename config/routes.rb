@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get "pagina", to: "home#pagina"
+  get "storia", to: "home#storia"
+  get "galleria", to: "home#galleria"
   
   root "home#index"
 end
