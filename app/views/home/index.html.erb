@@ -1,0 +1,38 @@
+</nav>
+    <%= render partial: '/layouts/navbar',
+        locals: {
+            codice: "CODICE: EXTRA | -20% sull'outlet. -30% sopra i 60€",
+            uomo: "Uomo",
+            donna: "Donna",
+            bambini: "Bambini",
+            sport: "Sport",
+            heritage: "Heritage",
+            culture: "Culture",
+            sales: "Mid-Season Sales",
+        }
+    %>
+    <%= render partial: '/components/hero',
+            locals: {
+                architettura: "architettura",
+                esplora:"Esplora i nostri progetti di architettura",
+            }
+        %>
+
+    <%=
+        render partial: '/components/evidenza',
+            locals: {
+            prima_evidenza: "https://archello.com/thumbs/images/2025/05/23/era---eric-rothfeder-architect-state-street-apartment-apartments-archello.1748022788.0348.jpg?fit=crop&w=700&h=468",
+            primo_testo: "Vittoria",
+            descrizione:  "Folly",
+
+            seconda_evidenza: "https://archello.com/thumbs/images/2025/02/25/velux-a-box-with-a-view-private-houses-archello.1740475949.0739.jpg",
+            secondo_testo: "Renda ",
+            descrizione:  "Folly",
+
+            terza_evidenza: "https://archello.com/thumbs/images/2025/05/21/fadd-architects-casa-vittoria-ristoranti-archello.1747824299.878.jpg?fit=crop&w=700&h=468",
+            terzo_testo:  "Folly",
+            descrizione:  "Folly",
+        }
+    %>
+
+
