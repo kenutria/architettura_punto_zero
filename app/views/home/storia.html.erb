@@ -1,1 +1,91 @@
-<p>a</p>
+<%# app/views/pages/about_us.html.erb %>
+
+<div class="bg-gray-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="text-center">
+      <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+        La Nostra Storia
+      </h1>
+      <p class="mt-5 text-xl text-gray-500 max-w-3xl mx-auto">
+        Dal 2010, Punto Zero trasforma visioni in spazi concreti.
+      </p>
+    </div>
+
+    <div class="mt-16 relative">
+      <div class="relative flex justify-center">
+        <span class="px-3 bg-gray-50 text-lg font-medium text-gray-900">
+          Il Nostro Percorso
+        </span>
+      </div>
+    </div>
+
+    <div class="mt-16 space-y-16">
+
+      <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8">
+        <div class="flex-shrink-0 w-full md:w-1/4 text-center md:text-right">
+          <h2 class="text-2xl font-bold text-indigo-600">2010</h2>
+          <p class="text-sm text-gray-500">La Nascita di un'Idea</p>
+        </div>
+        <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Punto Zero Prende Vita</h3>
+          <p class="text-gray-700">
+            Fondazione dello studio Punto Zero con l'obiettivo di ridefinire l'architettura contemporanea,
+            unendo estetica e funzionalità con un forte focus sulla sostenibilità.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row-reverse items-center md:items-start space-y-4 md:space-y-0 md:space-x-reverse md:space-x-8">
+        <div class="flex-shrink-0 w-full md:w-1/4 text-center md:text-left">
+          <h2 class="text-2xl font-bold text-indigo-600">2015</h2>
+          <p class="text-sm text-gray-500">Crescita e Innovazione</p>
+        </div>
+        <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Progetti di Rilievo e Nuovi Orizzonti</h3>
+          <p class="text-gray-700">
+            L'azienda espande i suoi servizi includendo l'interior design e le ristrutturazioni,
+            ricevendo i primi riconoscimenti per l'approccio innovativo e l'attenzione ai dettagli.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8">
+        <div class="flex-shrink-0 w-full md:w-1/4 text-center md:text-right">
+          <h2 class="text-2xl font-bold text-indigo-600">2020</h2>
+          <p class="text-sm text-gray-500">Impegno Ambientale</p>
+        </div>
+        <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Architettura Sostenibile: La Nostra Missione</h3>
+          <p class="text-gray-700">
+            Punto Zero rafforza il suo impegno verso la sostenibilità ambientale,
+            integrando pratiche e materiali ecocompatibili in ogni nuovo progetto.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row-reverse items-center md:items-start space-y-4 md:space-y-0 md:space-x-reverse md:space-x-8">
+        <div class="flex-shrink-0 w-full md:w-1/4 text-center md:text-left">
+          <h2 class="text-2xl font-bold text-indigo-600">Oggi</h2>
+          <p class="text-sm text-gray-500">Verso il Futuro</p>
+        </div>
+        <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Innovazione Continua e Prospettive Future</h3>
+          <p class="text-gray-700">
+            Continuiamo a esplorare nuove frontiere nel design e nell'architettura,
+            guidati dalla passione per la creatività e l'impegno per un futuro più sostenibile.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-20 text-center">
+      <p class="text-xl text-gray-600">
+        Scopri di più sui nostri progetti e come possiamo realizzare la tua visione.
+      </p>
+      <%= link_to "I Nostri Progetti", "#", class: "mt-8 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700" %>
+    </div>
+
+  </div>
+</div>
