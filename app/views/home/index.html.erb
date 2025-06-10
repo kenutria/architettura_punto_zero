@@ -1,29 +1,36 @@
-</nav>
+<%= render partial: '/components/hero',
+    locals: {
+        architettura: "architettura",
+        esplora:"Esplora i nostri progetti di architettura",
+    }
+%>
 
-    <%= render partial: '/components/hero',
-            locals: {
-                architettura: "architettura",
-                esplora:"Esplora i nostri progetti di architettura",
-            }
-        %>
+<%=
+    render partial: '/components/evidenza',
+        locals: {
+        prima_evidenza: "https://archello.com/thumbs/images/2025/05/23/era---eric-rothfeder-architect-state-street-apartment-apartments-archello.1748022788.0348.jpg?fit=crop&w=700&h=468",
+        primo_testo: "Vittoria",
+        prima_descrizione:  "design cupo",
 
-    <%=
-        render partial: '/components/evidenza',
-            locals: {
-            prima_evidenza: "https://archello.com/thumbs/images/2025/05/23/era---eric-rothfeder-architect-state-street-apartment-apartments-archello.1748022788.0348.jpg?fit=crop&w=700&h=468",
-            primo_testo: "Vittoria",
-            prima_descrizione:  "design cupo",
+        seconda_evidenza: "https://archello.com/thumbs/images/2025/02/25/velux-a-box-with-a-view-private-houses-archello.1740475949.0739.jpg",
+        secondo_testo: "Renda ",
+        seconda_descrizione:  "design moderno ",
 
-            seconda_evidenza: "https://archello.com/thumbs/images/2025/02/25/velux-a-box-with-a-view-private-houses-archello.1740475949.0739.jpg",
-            secondo_testo: "Renda ",
-            seconda_descrizione:  "design moderno ",
+        terza_evidenza: "https://archello.com/thumbs/images/2025/05/21/fadd-architects-casa-vittoria-ristoranti-archello.1747824299.878.jpg?fit=crop&w=700&h=468",
+        terzo_testo:  "Folly",
+        terza_descrizione:  "design elegante ",
+    }
+%>
 
-            terza_evidenza: "https://archello.com/thumbs/images/2025/05/21/fadd-architects-casa-vittoria-ristoranti-archello.1747824299.878.jpg?fit=crop&w=700&h=468",
-            terzo_testo:  "Folly",
-            terza_descrizione:  "design elegante ",
+<%=
+    render partial: 'components/servizi',
+        locals: {
+            text1:"I nostri servizi per l'architettura moderna",
+            text2:"Progettazione personalizzata",
+            text3:"Esplora il processo",
+            text4:"Consulenza di esperti",
+            text5:"Parla con noi",
+            text6:"Rendering 3D avanzati",
+            text7:"Guarda i dettagli",
         }
-    %>
-
-    <%=
-        render partial: 'components/servizi'
-    %>
+%>
